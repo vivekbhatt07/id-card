@@ -7,10 +7,43 @@
 
 body {
   font-family: "Inter", sans-serif;
-  font-size: 62.5%;
+  font-size: 80%;
   background-color: #23252c;
   height: 100vh; }
 
 .card {
-  margin: 60px 200px;
-  background-color: #f5f5f5; }
+  margin: 20px 516px;
+  background-color: #f5f5f5;
+  border-radius: 1rem; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  gap: 3px; }
+  .header__job {
+    color: #f47d27; }
+  .header__website {
+    margin-top: 2px; }
+
+.link {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .link__btn {
+    padding: 0.35rem 0.8rem;
+    border: none;
+    background-color: #d1d5db;
+    border-radius: 5px;
+    cursor: pointer; }
+    .link__btn--active {
+      background-color: #297fe5;
+      color: #fff; }
+  .link__content {
+    display: flex;
+    align-items: center; }
+  .link__text {
+    font-family: "Inter";
+    margin-left: 5px; }

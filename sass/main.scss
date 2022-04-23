@@ -1,5 +1,9 @@
 $bg-color: #23252c;
 $card-bg-color: #f5f5f5;
+$orange-color: #f47d27;
+$btn-color: #d1d5db;
+$btn-active-color: #297fe5;
+$full-white: #fff;
 
 *,
 *::before,
@@ -11,12 +15,69 @@ $card-bg-color: #f5f5f5;
 
 body {
   font-family: "Inter", sans-serif;
-  font-size: 62.5%;
+  font-size: 80%;
   background-color: $bg-color;
   height: 100vh;
 }
 
 .card {
-  margin: 60px 200px;
+  margin: 20px 516px;
   background-color: $card-bg-color;
+  border-radius: 1rem;
 }
+
+// HEADER:
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  gap: 3px;
+
+  // &__name {
+
+  // }
+
+  &__job {
+    color: $orange-color;
+  }
+
+  &__website {
+    margin-top: 2px;
+  }
+}
+
+// LINK:
+
+.link {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__btn {
+    padding: 0.35rem 0.8rem;
+    border: none;
+    background-color: $btn-color;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &--active {
+      background-color: $btn-active-color;
+      color: $full-white;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: "Inter";
+    margin-left: 5px;
+  }
+}
+
+// ABOUT :
