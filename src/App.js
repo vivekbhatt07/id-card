@@ -5,6 +5,7 @@ import Link from "../src/Components/Link";
 import About from "../src/Components/About";
 import Interest from "./Components/Interest";
 import Footer from "./Components/Footer";
+import "./style.css";
 export default function App() {
   return (
     <div className="card">

@@ -1,7 +1,22 @@
+$bg-color: #23252c;
+$card-bg-color: #f5f5f5;
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+  background-color: $bg-color;
+  height: 100vh;
+}
+
+.card {
+  margin: 60px 200px;
+  background-color: $card-bg-color;
 }
