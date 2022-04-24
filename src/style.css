@@ -40,14 +40,16 @@ body {
   align-items: center;
   margin-top: 1rem; }
   .link__btn {
-    padding: 0.35rem 0.8rem;
+    padding: 0.525em 1.12em;
     border: none;
     background-color: #d1d5db;
     border-radius: 5px;
     cursor: pointer; }
     .link__btn--active {
       background-color: #297fe5;
-      color: #fff; }
+      color: #fff;
+      font-size: 1rem;
+      padding: 0.548em 0.531em; }
   .link__content {
     display: flex;
     align-items: center; }
