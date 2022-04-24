@@ -8,13 +8,15 @@ import Footer from "./Components/Footer";
 import "./style.css";
 export default function App() {
   return (
-    <div className="card">
-      <Pic />
-      <Header />
-      <Link />
-      <About />
-      <Interest />
-      <Footer />
+    <div className="card-container">
+      <div className="card">
+        <Pic />
+        <Header />
+        <Link />
+        <About />
+        <Interest />
+        <Footer />
+      </div>
     </div>
   );
 }
