@@ -4,6 +4,7 @@ $orange-color: #f47d27;
 $btn-color: #d1d5db;
 $btn-active-color: #297fe5;
 $full-white: #fff;
+$footer-bg-color: #d5d4d8;
 
 *,
 *::before,
@@ -55,6 +56,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 15px;
 
   &__btn {
     padding: 0.35rem 0.8rem;
@@ -81,3 +83,42 @@ body {
 }
 
 // ABOUT :
+.about {
+  margin: 25px 30px;
+
+  &__head {
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    opacity: 0.8;
+  }
+}
+
+// INTEREST:
+.interest {
+  margin: 25px 30px;
+
+  &__head {
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    opacity: 0.8;
+  }
+}
+
+// FOOTER:
+.footer {
+  background-color: $footer-bg-color;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
+
+  // &__link {
+  // }
+
+  &__img {
+    width: 20px;
+  }
+}
