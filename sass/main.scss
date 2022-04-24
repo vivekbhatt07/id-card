@@ -129,6 +129,7 @@ body {
   padding: 1rem 0;
   display: flex;
   justify-content: space-evenly;
+  box-shadow: 1px 0 20px -2px #000;
 
   &__img {
     width: 1.5625rem;
@@ -139,6 +140,7 @@ body {
   max-width: 23.45rem;
   max-height: 18rem;
   overflow: hidden;
+  box-shadow: 1px 0 20px -2px #000;
 }
 
 .img {
@@ -148,6 +150,7 @@ body {
 }
 
 // ANIMATION:
+
 @keyframes leftToRight {
   0% {
     transform: translateX(-50px);
