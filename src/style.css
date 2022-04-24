@@ -29,8 +29,16 @@ body {
   align-items: center;
   margin: 0.5rem 0;
   gap: 0.234375rem; }
+  .header__name {
+    animation-name: leftToRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    font-family: "Dosis", sans-serif; }
   .header__job {
-    color: #f47d27; }
+    color: #f47d27;
+    animation-name: rightToLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in; }
   .header__website {
     margin-top: 0.15625rem; }
 
@@ -88,3 +96,25 @@ body {
   height: 18rem;
   width: 23.45rem;
   object-fit: cover; }
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0; }
+  50% {
+    transform: translateX(50px);
+    opacity: 0.5; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(50px);
+    opacity: 0; }
+  50% {
+    transform: translateX(-50px);
+    opacity: 0.5; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }

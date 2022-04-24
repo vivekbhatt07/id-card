@@ -44,8 +44,18 @@ body {
   margin: 0.5rem 0;
   gap: 0.234375rem;
 
+  &__name {
+    animation-name: leftToRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    font-family: "Dosis", sans-serif;
+  }
+
   &__job {
     color: $orange-color;
+    animation-name: rightToLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
   }
 
   &__website {
@@ -135,4 +145,39 @@ body {
   height: 18rem;
   width: 23.45rem;
   object-fit: cover;
+}
+
+// ANIMATION:
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(50px);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-50px);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
